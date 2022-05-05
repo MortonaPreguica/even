@@ -1,34 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://assets.zeit.co/image/upload/v1538361091/repositories/next-js/next-js.png" alt="Logo of the project" align="right">
 
-## Getting Started
+# Entrevista EvenCard &middot; ![Badge](https://img.shields.io/static/v1?label=License&message=MIT&color=8dbb05&style=for-the-badge)
+![Badge](https://img.shields.io/static/v1?label=npm&message=6.14.13&color=d8624c&style=flat)
+![Badge](https://img.shields.io/static/v1?label=web&message=react&color=0f80c0&style=flat)
+> Feito com esmero 🐱‍👤
 
-First, run the development server:
+Projeto criado em React.js utilizando o framework Next.js. O projeto tem como intuito a criação de uma lista de empresas, sendo possível ver detalhes e editar, salvando todas as informações em LocalStorage 
 
-```bash
+## Installing / Getting started
+
+- Node.js 12.22.0 ou mais recente
+- MacOS, Windows e Linux 
+
+
+## Developing
+
+### Built With
+
+- React.js 18.1.0
+- Next.js 12.1.6
+- React-hook-form ^7.30.0
+- Tailwindcss ^3.0.24
+- PostCSS 8.4.13 
+- Headless UI 1.6.1
+- HeroIcons ^1.0.6
+
+
+### Setting up Dev
+
+*É necessário possuir git*
+
+```shell
+git clone https://github.com/MortonaPreguica/even.git
+cd your-project/
+npm install
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Style guide
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Criado em React.js utilizando hooks do react(useEffect, useState) e melhores práticas como operador spread. 
+Para a criação de novos objetos utilizei o spread para o array original e apenas adicionar o outro:
+const newArray = [...oldArray, newElement]
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Para excluir um item utilizei o splice para eliminar o elemento do array, o indexOf foi utilizado para achar o objeto dentro do array e excluir pelo index.
 
-## Learn More
+Para a modificação, como é feita em outra página, é necessário buscar a empresa dentro do localStorage, mostrá-lo em tela e atualiza-lo para a página inicial.
 
-To learn more about Next.js, take a look at the following resources:
+Tailwindcss foi usado para a criação do CSS, mais alguns frameworks feito pelos criados do TailwindCSS como o Headless UI e HeroIcons
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Licensing
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT
