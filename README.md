@@ -32,7 +32,7 @@ Projeto criado em React.js utilizando o framework Next.js. O projeto tem como in
 
 ```shell
 git clone https://github.com/MortonaPreguica/even.git
-cd your-project/
+cd even/
 npm install
 npm run dev
 ```
